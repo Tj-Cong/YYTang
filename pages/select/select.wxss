@@ -1,0 +1,39 @@
+.head_fliter{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 0;
+  margin-bottom: 32rpx;
+  width: 100%;
+}
+
+.card {
+  width: 90%;
+  height: auto;
+  padding: 24rpx 12rpx;
+  border-radius: 10px;
+  background-color: #eaf4f4;
+  margin-bottom: 32rpx;
+}
+
+.line {
+  /* display: flex;
+  flex-direction: row; */
+  align-items: center; 
+  width: 100%;
+}
+
+.school_name {
+  font-size: 36rpx;
+  font-weight: bolder;
+}
+.college_name {
+  margin-top: 6rpx;
+  font-size: 24rpx;
+  margin-right: 0;
+  text-align: right;
+  float: right;
+}
+.passing_line {
+  font-size: 30rpx;
+}

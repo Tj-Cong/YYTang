@@ -1,0 +1,69 @@
+<view class="container">
+  <view class="info-card">
+    <view class="line">
+      <text class="line-item">学校名称：</text><text class="line-content">同济大学</text>
+    </view>
+    <view class="line">
+      <text class="line-item">学校类型：</text><text class="line-content">985</text>
+    </view>
+    <view class="line">
+      <text class="line-item">所属学院：</text><text class="line-content">电子与信息工程学院</text>
+    </view>
+    <view class="line">
+      <text class="line-item">专业名称：</text><text class="line-content">计算机科学与技术</text>
+    </view>
+    <view class="line">
+      <text class="line-item">专业代码：</text><text class="line-content">xxxxx</text>
+    </view>
+    <view class="line">
+      <text class="line-item">考试科目：</text><text class="line-content">数1、英1、专业课</text>
+    </view>
+    <view class="line">
+      <text class="line-item">近三年分数线：</text><text class="line-content">xxx/xxx/xxx</text>
+    </view>
+    <view class="line">
+      <text class="line-item">水旱区：</text><text class="line-content">旱区</text>
+    </view>
+  </view>
+
+  <view class="demo-block__wrapper">
+    <t-divider t-class="demo-1" t-class-content="t-class-content">
+      <text slot="content">评论区</text>
+    </t-divider>
+  </view>
+
+  <view class="comment-card">
+  <view class="avatar-line">
+    <view style="display: flex; align-items: center;">
+      <t-avatar shape="circle" icon="user"/>
+      <text style="margin-left: 20rpx;font-size: 26rpx;">{{nickname}}</text>
+    </view>
+    <view style="display: flex; align-items: center;">
+      <t-icon name="thumb-up" size="xl"/><text style="margin-left: 10rpx;">10</text>
+      <t-icon style="margin-left: 20rpx;" name="thumb-down" size="xl"/><text style="margin-left: 10rpx;">20</text>
+    </view>
+  
+  </view>
+  <view class="comment-line">xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</view>
+  </view>
+
+  <view class="demo-block__wrapper">
+    <t-divider t-class="demo-1">
+    </t-divider>
+  </view>
+
+  <view class="comment-card">
+  <view class="avatar-line">
+    <view style="display: flex; align-items: center;">
+      <t-avatar shape="circle" icon="user"/>
+      <text style="margin-left: 20rpx;font-size: 26rpx;">{{nickname}}</text>
+    </view>
+    <view style="display: flex; align-items: center;">
+      <t-icon name="thumb-up" size="xl"/><text style="margin-left: 10rpx;">10</text>
+      <t-icon style="margin-left: 20rpx;" name="thumb-down" size="xl"/><text style="margin-left: 10rpx;">20</text>
+    </view>
+  
+  </view>
+  <view class="comment-line">xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</view>
+  </view>
+</view>

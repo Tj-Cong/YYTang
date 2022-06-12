@@ -1,0 +1,70 @@
+<view class="container" style="padding-top: 0;">
+<view class="head_fliter">
+  <t-dropdown-menu style="width: 100%;">
+    <t-dropdown-item
+      label="数学"
+      options="{{mathOptions}}"
+    />
+    <t-dropdown-item
+      label="英语"
+      options="{{englishOptions}}"
+    />
+    <t-dropdown-item
+      label="硕士类型"
+      options="{{masterTypeOptions}}"
+      multiple
+    />
+  </t-dropdown-menu>
+  <t-dropdown-menu style="width: 100%;">
+    <t-dropdown-item
+      label="省份"
+      options="{{provinceOptions}}"
+    />
+    <t-dropdown-item
+      label="水旱区"
+      options="{{areaOptions}}"
+    />
+    <t-dropdown-item
+      label="学校类型"
+      options="{{schoolTypeOptions}}"
+      multiple
+    />
+  </t-dropdown-menu>
+</view>
+
+<view class="demo-block__wrapper">
+  <t-divider t-class="demo-1" t-class-content="t-class-content">
+    <text slot="content">共搜索到{{searchedItemNums}}条词条</text>
+  </t-divider>
+</view>
+
+<view class="card">
+  <view class="line">
+    <text class="school_name">大连理工大学</text>
+    <text class="college_name">{{major}}</text>
+  </view>
+  <view class="line" style="margin-top: 12rpx;">
+    <text class="passing_line">录取分数线（2019年-2022年）：360/360/360</text>
+  </view>
+</view>
+
+<view class="card">
+  <view class="line">
+    <text class="school_name">哈尔滨工业大学</text>
+    <text class="college_name">{{major}}</text>
+  </view>
+  <view class="line" style="margin-top: 12rpx;">
+    <text class="passing_line">录取分数线（2019年-2022年）：360/360/360</text>
+  </view>
+</view>
+
+<view class="card">
+  <view class="line">
+    <text class="school_name">华东师范大学</text>
+    <text class="college_name">{{major}}</text>
+  </view>
+  <view class="line" style="margin-top: 12rpx;">
+    <text class="passing_line">录取分数线（2019年-2022年）：360/360/360</text>
+  </view>
+</view>
+</view>

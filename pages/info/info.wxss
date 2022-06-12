@@ -1,0 +1,42 @@
+.info-card {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  height: auto;
+  padding: 24rpx 36rpx;
+  background-color: #eaf4f4;
+  border-radius: 10px;
+}
+.line {
+  padding: 12rpx 24rpx;
+}
+.line-item {
+  font-size: 30rpx;
+  width: 210rpx;
+}
+
+.line-content {
+  font-size: 30rpx;
+}
+
+.comment-card{
+  width: 90%;
+  height: auto;
+  padding: 12rpx 12rpx;
+}
+
+.avatar-line{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.comment-line {
+  font-size: 32rpx;
+  padding-left: 100rpx;
+  padding-right: 50rpx;
+  overflow-wrap: break-word;
+  line-height: 36rpx;
+}

@@ -1,0 +1,75 @@
+<view class="container">
+<view class="head_logo">
+  <image src="logo_00.png" class="head_img"/>
+</view>
+
+<view class="search-item">
+<radio-group class="row_radio_group" bindchange="onBindChange">
+  <radio color="#0052d9" checked="true" value="0">专业</radio>
+  <radio color="#0052d9" value="1">专业课</radio>
+</radio-group>
+<t-search
+  t-class-cancel="t-class-cancel"
+  class="t-class-input"
+  placeholder="{{placeHolderText}}"
+  center="{{true}}" 
+  bind:submit="submitHandle"
+/>
+</view>
+
+<view class="demo-block__wrapper">
+  <t-divider t-class="demo-1" t-class-content="t-class-content">
+    <text slot="content">可选条件</text>
+  </t-divider>
+</view>
+
+<view style="display: flex;flex-direction: row;">
+<view class="pannel-item" bind:tap="onClickPicker" data-index="{{1}}">
+  <view class="pannel-label">学校类型</view>
+  <view class="pannel-select">
+    <view class="pannel-text {{selectedCityValue ? '' : 'empty'}}">{{selectedCityValue || '请选择'}}</view>
+    <t-icon name="chevron-down" color="rgba(0, 0, 0, 0.26)" size="24px" />
+  </view>
+</view>
+<view class="pannel-item" bind:tap="onClickPicker2" data-index="{{1}}">
+  <view class="pannel-label">所在省份</view>
+  <view class="pannel-select">
+    <view class="pannel-text {{selectedTypeValue ? '' : 'empty'}}">{{selectedTypeValue || '请选择'}}</view>
+    <t-icon name="chevron-down" color="rgba(0, 0, 0, 0.26)" size="24px" />
+  </view>
+</view>
+</view>
+
+<view style="width: 90%; display: flex; flex-direction: row;align-items: center;">
+  <view class="pannel-label">学校名称</view>
+  <view class="pannel-select" style="width: 515rpx;">
+    <input  label="学校名称" type="text" placeholder="请输入学校名称" />
+  </view>
+</view>
+
+<view class="picker1">
+  <t-picker
+    visible="{{picker1visible}}"
+    title="学校类型"
+    cancelBtn="取消"
+    confirmBtn="确认"
+    bindchange="onPickerConfirm"
+    bindconfirm="onPickerConfirm"
+    bindcancel="onPickerCancel"
+  >
+    <t-picker-item options="{{citys}}" value="{{selectedCityValue}}" bindchange="onColumnChange"></t-picker-item>
+  </t-picker>
+
+  <t-picker
+    visible="{{picker2visible}}"
+    title="省份"
+    cancelBtn="取消"
+    confirmBtn="确认"
+    bindchange="onPicker2Confirm"
+    bindconfirm="onPicker2Confirm"
+    bindcancel="onPicker2Cancel"
+  >
+    <t-picker-item options="{{type}}" value="{{selectedTypeValue}}" bindchange="onColumnChange"></t-picker-item>
+  </t-picker>
+</view>
+</view>

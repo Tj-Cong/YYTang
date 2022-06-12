@@ -1,0 +1,17 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/select/select",
+    "pages/info/info"
+  ],
+  "window":{
+    "backgroundColor": "#83A4D4",
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#83A4D4",
+    "navigationBarTitleText": "一研堂",
+    "navigationBarTextStyle":"black"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}
